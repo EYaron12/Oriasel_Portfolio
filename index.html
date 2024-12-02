@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!-- Intro -->
+    <div class="introduction">
+        <div id="intro" class="intro active-section">
+            <h1>Hi</h1>
+            <p>I am Aaron M. Oriasel. Wanna know more about me?</p>
+            <button onclick="showDescription()" id="btn">Tap Here!</button>
+        </div>
+    </div>
+    <!-- Description -->
+    <div id="description" class="descript desc-section">
+        <h2>Hello Everyone!!</h2>
+        <p>Welcome To My Portfolio</p>
+        <button id="btn2" onclick="showPage('main-page')">Continue>>></button>
+    </div>
+
+    <!-- Main Page -->
+    <div id="main-page" class="main_page content-section">
+        <nav id="navigation" class="navigator">
+            <h2 class="first">iTS_EY ARON.</h2>
+            <h2 class="second">iTS_EY ARON.</h2>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('contacts')">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Content Sections -->
+
+        <div id="home" class="content-section active-section">
+            <div class="home-sec1">
+                <div class="image-container">
+                    <img src="images/yeyeye.png" alt="Aaron Oriasel" class="profile-image">
+                </div>
+                <div class="myintro">
+                    <h1>Hello Everyone!!</h1>
+                    <h3>I'm <span class="name">Aaron Oriasel</span>, a 20-year-old Bachelor of Science in Information Technology student majoring in Software Development at Marinduque State College. I focus on developing software solutions and aim to apply my skills to practical problems. I’m currently learning and growing in the field of technology.</h3>
+                    <div class="social-icons">
+                        <a href="https://www.tiktok.com/@arnn_orsl?_t=8rsW1WDnuJ6&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100018905237271&mibextid=kFxxJD" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/@mentos3563?si=LzWr35X3yWQfuo1y" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/_itsey.aron/profilecard/?igsh=MXh5dHZ6bWk0YTR2Ng==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <button id="scrollToSkillsBtn">Know More</button>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <!-- My Skills -->
+            <div class="home-sec2">
+                <div class="title-home-sec2">
+                    <h1>My Skills</h1>
+                </div>
+                <div class="skills">
+                    <div class="skill">
+                        <h3>Python</h3>
+                        <img src="images/python-tru.png" alt="">
+                        <p>I learned the basics of Python during my first year of college, focusing on fundamental programming concepts such as variables, loops, and functions. I have used Python for simple tasks like automation and data manipulation.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>HTML</h3>
+                        <img src="images/html.png" alt="">
+                        <p>In my second year, I gained a solid understanding of HTML, learning how to structure web pages using semantic elements and creating accessible and well-organized content.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>CSS</h3>
+                        <img src="images/css-3.png" alt="">
+                        <p>Alongside HTML, I also learned CSS in my second year, where I focused on styling web pages to make them visually appealing and responsive. I gained experience in layout techniques like Flexbox and Grid, as well as implementing designs that adapt to various screen sizes.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Javascript</h3>
+                        <img src="images/js.png" alt="">
+                        <p>In my third year, I started learning JavaScript, covering the basics of adding interactivity to web pages, such as handling simple events and modifying HTML elements dynamically.</p>
+                    </div>
+                </div>
+                <div class="btnToProjects">
+                    <button class="toProject" id="scrollToProjectsBtn">Know More</button>
+                </div>
+            </div>
+
+            <!-- My Projects -->
+            <div class="home-sec3">
+                <div class="title-home-sec3">
+                    <h1>My Projects</h1>
+                </div>
+                <div class="projects">
+                    <div class="prjct">
+                        <h3>XRM 110</h3>
+                        <img src="images/motor1.jpg" alt="">
+                    </div>
+                    <div class="prjct">
+                        <h3>Logo Proposal</h3>
+                        <img src="images/prjct2.png" alt="">
+                    </div>
+                    <div class="prjct">
+                        <h3>Inventory System</h3>
+                        <img src="images/inventory.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bot-services">
+                <button class="serv-btn" onclick="showSection('services')">Go To My Services</button>
+            </div>
+        </div>
+
+
+        <div id="services" class="content-section">
+            <h3>Services</h3>
+            <div class="services-container">
+                <div class="service-card">
+                    <h1>Motorcycle Repair</h1>
+                    <p>I provide professional motorcycle repair services, including maintenance, diagnostics, and custom modifications to keep your ride smooth and safe.</p>
+                </div>
+                <div class="service-card">
+                    <h1>Front End Developing</h1>
+                    <p>Skilled in creating responsive, user-friendly, and visually appealing websites using HTML, CSS, and JavaScript for a seamless web experience.</p>
+                </div>
+            </div>
+            <div class="contact-btn-container">
+                <button id="contactMeButton" onclick="showSection('contacts')">Contact Me</button>
+            </div>
+        </div>
+
+
+
+        <div id="contacts" class="content-section">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <form action="#" method="POST" class="contact-form">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Type your message" required></textarea>
+            
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+        </div>
+
+
+
+        <div class="btncntr">
+            <button class="backbtn" onclick="backPage('intro')">Back To Front</button>
+        </div>
+        <footer>Paa</footer>
+    </div>
+    
+    <script src="index.mjs"></script>
+</body>
+</html>
